@@ -1,11 +1,23 @@
 # Instruções de utilização
+cd ./app
+npm install
+npm run web
 
-## Instalação do Site
+## Estrutura de pastas
+/assets
+/components
+/config
+/screens
+/navigation
+/utils
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
+### [0.1.0] - 29/04/2026
 #### Adicionado
-- Adicionado ...
+- Criação da estrutura básica do site e app no Firebase Console
+
+### [0.2.0] - 04/05/2026
+#### Adicionado
+- **RF-003:** CRUD de categorias de receita e despesa (`services/categoriasService.js`, telas em `screens/categorias/`), entrada pela home em **Categorias**

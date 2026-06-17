@@ -1,46 +1,107 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O projeto MEI Easy consiste no desenvolvimento de uma ferramenta digital voltada para auxiliar microempreendedores individuais (MEIs) na gestão financeira de seus negócios. A aplicação tem como objetivo oferecer recursos simples e acessíveis para o registro, organização e acompanhamento de informações financeiras, como faturamento, despesas e movimentações do negócio.
+
+Muitos microempreendedores precisam administrar diversas atividades ao mesmo tempo, incluindo atendimento ao cliente, prestação de serviços, vendas e tarefas administrativas. Nesse contexto, a organização das finanças do empreendimento pode se tornar uma atividade complexa, especialmente quando não há o uso de ferramentas adequadas.
+
+Dessa forma, o sistema proposto busca facilitar o controle financeiro do microempreendedor, oferecendo uma solução que permita visualizar de forma clara as movimentações do negócio e apoiar a tomada de decisões relacionadas à gestão financeira.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Os microempreendedores individuais (MEIs) representam uma parcela significativa dos pequenos negócios no Brasil. De acordo com dados do Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE), somente no primeiro trimestre de 2025 foram abertos mais de 1,4 milhão de pequenos negócios no país, sendo que aproximadamente 78% desses registros correspondem a microempreendedores individuais. Esse crescimento evidencia a importância desse modelo de empreendedorismo na economia brasileira.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Apesar dessa expansão, muitos MEIs são responsáveis por diversas atividades relacionadas ao funcionamento de seu empreendimento. Além da execução do serviço ou venda de produtos, esses profissionais precisam lidar também com tarefas administrativas e financeiras, como controle de gastos, registro de receitas, acompanhamento do faturamento e organização das informações do negócio.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Nesse contexto, a gestão financeira torna-se um desafio para muitos empreendedores. Sem ferramentas adequadas ou conhecimento em gestão financeira, é comum que enfrentem dificuldades para manter o controle das movimentações do negócio. Segundo pesquisa realizada pelo SEBRAE, 77% dos microempreendedores nunca realizaram treinamento em finanças, enquanto mais de 60% realizam pagamentos da empresa utilizando contas pessoais. Nesse cenário, o acompanhamento financeiro muitas vezes é realizado de forma informal, por meio de anotações em papel, planilhas simples ou até mesmo apenas pela memória. Essa situação pode dificultar a visualização da real condição financeira do negócio, prejudicar o planejamento e impactar a tomada de decisões importantes para a continuidade e crescimento da atividade.
+
+Diante desse contexto, torna-se relevante o desenvolvimento de soluções que auxiliem os microempreendedores na organização e no acompanhamento das informações financeiras de seus negócios de forma simples e acessível.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo geral 
+Desenvolver um software que auxilie microempreendedores individuais na organização e no controle das informações financeiras de seus negócios, contribuindo para uma gestão mais clara e estruturada das atividades do empreendimento.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+- Permitir o registro de receitas e despesas do negócio.
+- Possibilitar o acompanhamento das movimentações financeiras.
+- Disponibilizar relatórios que facilitem a análise do faturamento e dos gastos.
+- Auxiliar o empreendedor na visualização da situação financeira do negócio.
+- Oferecer uma interface simples e intuitiva, acessível a usuários com diferentes níveis de conhecimento em tecnologia e gestão.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Os microempreendedores individuais possuem grande relevância na economia brasileira. Segundo dados do SEBRAE, Micro e pequenas empresas geram 27% do Produto Interno Bruto (PIB) do Brasil, demonstrando a importância desse segmento para a geração de renda e para o desenvolvimento econômico do país.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Apesar dessa relevância, muitos MEIs enfrentam dificuldades relacionadas à gestão financeira de seus negócios, especialmente pela falta de formação em gestão e pela necessidade de administrar diversas atividades ao mesmo tempo. Como grande parte desses empreendedores trabalha de forma autônoma e sem equipe de apoio, eles precisam conciliar atividades operacionais, atendimento ao cliente e administração do empreendimento ao mesmo tempo, o que pode dificultar a organização das finanças e o controle adequado das receitas e despesas.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Como apontado em pesquisas do SEBRAE, uma parcela significativa dos MEIs nunca recebeu treinamento em finanças e frequentemente realiza o controle das movimentações do negócio de maneira informal, utilizando anotações manuais, planilhas simples ou contas pessoais para pagamentos da empresa.
+
+Diante desse cenário, torna-se relevante o desenvolvimento de estudos e ferramentas que auxiliem os microempreendedores na organização e no acompanhamento de suas informações financeiras. A escolha deste tema busca aprofundar a investigação sobre as dificuldades enfrentadas pelos MEIs no controle financeiro de seus negócios e explorar formas de tornar a gestão mais simples e acessível para esse público. 
+
+Assim, o projeto propõe o desenvolvimento de uma ferramenta voltada para microempreendedores individuais, com o objetivo de apoiar o registro e o acompanhamento das movimentações financeiras de forma clara e estruturada. A proposta tem como público-alvo MEIs que necessitam de soluções práticas para organizar as finanças de seus negócios, contribuindo para uma gestão mais eficiente e para a sustentabilidade de pequenos empreendimentos.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo da aplicação é composto por microempreendedores individuais (MEIs) que precisam organizar e acompanhar as informações financeiras de seus negócios.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+De modo geral, são profissionais que atuam de forma autônoma e acumulam diferentes funções, incluindo atividades operacionais, atendimento ao cliente e administração do negócio.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Esse público costuma possuir conhecimento básico no uso de ferramentas digitais, como aplicativos bancários, redes sociais e sistemas de pagamento. No entanto, muitos não utilizam sistemas específicos de gestão financeira.
+
+Também é comum que o MEI trabalhe de forma individual ou com poucos colaboradores, o que reduz a existência de hierarquias formais dentro do negócio. Em alguns casos, familiares ou parceiros podem auxiliar em atividades administrativas ou financeiras, podendo também ter contato com as informações geradas pela ferramenta. 
+
+Diante desse contexto, a aplicação busca oferecer uma solução simples e acessível, adequada a usuários com diferentes níveis de conhecimento em tecnologia e gestão financeira.
+
+### Personas
+
+#### Persona 1 – MEI iniciante
+
+- **Nome:** Carlos Silva
+- **Idade:** 32 anos
+- **Profissão:** Dono de um pequeno negócio de manutenção de celulares
+**Perfil:** Carlos abriu recentemente seu MEI e trabalha sozinho. Ele utiliza o celular para atender clientes, divulgar serviços nas redes sociais e receber pagamentos via PIX. 
+- **Dor:** Carlos possui dificuldade para organizar suas receitas e despesas. Muitas vezes registra valores em anotações simples ou tenta controlar as informações apenas de memória. Ele busca uma forma prática de acompanhar o faturamento e entender melhor como está a situação financeira do seu negócio.
+
+#### Persona 2 – MEI com negócio estabelecido
+
+- **Nome:** Juliana Ferreira
+- **Idade:** 41 anos
+- **Profissão:** Confeiteira e proprietária de um pequeno negócio de bolos e doces há 5 anos.
+- **Perfil:** Juliana trabalha principalmente por encomenda e recebe pedidos por aplicativos de mensagens e redes sociais.
+- **Dor:** Ela registra os pedidos em um caderno e anota seus gastos com ingredientes manualmente. Apesar de utilizar tecnologia no dia a dia, não possui experiência com sistemas de gestão. Gostaria de acompanhar melhor seus lucros e gastos mensais para planejar o crescimento do seu negócio a longo prazo.
+  
+#### Persona 3 – MEI que utiliza planilhas para controle financeiro
+
+- **Nome**: João Paulo
+- **Idade:** 36 anos
+- **Profissão:** Eletricista autônomo
+- **Perfil:** João trabalha prestando serviços de manutenção elétrica em residências e pequenos comércios. Ele agenda atendimentos pelo celular e recebe pagamentos principalmente por transferência ou PIX.
+- **Dor:** Para acompanhar suas finanças, João utiliza uma planilha simples no computador, onde registra os serviços realizados e os valores recebidos. No entanto, ele tem dificuldade em manter esse controle sempre atualizado e muitas vezes esquece de registrar despesas relacionadas ao trabalho, como compra de materiais ou deslocamento. Rafael gostaria de uma ferramenta mais prática para registrar essas informações no dia a dia e acompanhar melhor seus ganhos e gastos.
+
+### Stakeholders
+
+Os stakeholders são os indivíduos ou grupos que podem ser impactados direta ou indiretamente pela aplicação.
+
+#### Stakeholders principais:
+
+- **Microempreendedores individuais (MEIs):**
+  São os principais usuários da aplicação. Incluem pequenos prestadores de serviços e comerciantes formalizados como MEI, que utilizam o sistema para registrar, organizar e acompanhar as informações financeiras de seus negócios, como receitas, despesas e movimentações do empreendimento.
+
+#### Stakeholders secundários:
+
+- **Contadores:**
+  Profissionais que auxiliam os MEIs no cumprimento de obrigações fiscais e na organização das informações financeiras necessárias para declarações e relatórios.
+
+- **Parceiros ou familiares:**
+  Pessoas que eventualmente auxiliam o microempreendedor em atividades administrativas ou financeiras do negócio e podem ter contato com as informações organizadas pela aplicação.
+
+- **Instituições que apoiam o empreendedor:**
+  Organizações que incentivam o desenvolvimento de pequenos negócios, como o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE), que oferecem capacitação, orientação e suporte para microempreendedores.
+
+- **Clientes dos microempreendedores:**
+  Consumidores que contratam os serviços ou compram produtos dos MEIs. Uma melhor organização financeira do negócio pode contribuir para maior controle de pedidos, melhor planejamento e melhoria na qualidade do atendimento.
+
+- **Fornecedores:**
+Empresas ou profissionais responsáveis por fornecer insumos, produtos ou materiais para o funcionamento do negócio. Uma gestão financeira mais organizada pode facilitar o controle de pagamentos, compras e planejamento de estoque.
+
+Esses grupos possuem interesse direto ou indireto na organização das informações financeiras do negócio, contribuindo para uma gestão mais eficiente e para o desenvolvimento das atividades empreendedoras.
