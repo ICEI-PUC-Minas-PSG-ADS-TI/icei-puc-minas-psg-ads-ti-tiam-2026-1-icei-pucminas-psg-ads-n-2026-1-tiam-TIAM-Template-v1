@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# Medical Hosp
 
-`CURSO`
+`Análise e Desenvolvimento De Sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicação Móvel`
 
-`SEMESTRE`
+`1/2026`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Aplicativo para gestão de padrões de calibração da Medical Hosp.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Helena Edim Guimarães
+* Lucas Gabriel Fernandes Oliveira
+* Arthur Carvalho Bandeira de Melo
+* Gabriel Rodrigues Pereira da Silva
 
 ## Orientador
 
-* Nome completo do professor 1
+* Pedro Felipe Alves de Oliveira
 
 ## Instruções de utilização
 
