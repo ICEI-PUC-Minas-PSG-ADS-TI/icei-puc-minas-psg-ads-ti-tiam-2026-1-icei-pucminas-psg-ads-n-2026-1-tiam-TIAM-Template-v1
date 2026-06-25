@@ -2,25 +2,39 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Nesta parte mostramos o que o app precisa ter, pensando nos usuários da Medical Hosp.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Técnicas usadas:
+
+- **Design Thinking** — pra mapear o problema e as dores do dia a dia.
+- **Personas** — perfis dos usuários reais (técnico, estoque, gestor).
+- **Histórias de Usuário** — frases simples do que cada um quer fazer.
+- **Requisitos Funcionais** — lista das funções principais (cadastro, entradas/saídas, alertas, dashboard).
+- **Requisitos Não Funcionais** — fácil de usar, rápido, seguro e dentro das limitações do projeto.
+
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### Persona 1 – Leandro Silva
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Idade: 25 anos.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+Papel: Técnico de Engenharia Clínica.
+
+Contexto: Realiza calibrações em hospitais. Precisa conferir se os seus próprios instrumentos (padrões) estão válidos antes de iniciar um serviço.
+
+Dor: Perde tempo procurando certificados em papel ou pastas digitais bagunçadas, o que gera insegurança nos resultados.
+
+### Persona 2 – Alberto Martins
+
+Idade: 36 anos.
+
+Papel: Engenheiro Clínico.
+
+Contexto: Responsável por garantir que nenhum padrão vença e por homologar os fornecedores que calibram os equipamentos da Medical Hosp.
+
+Dor: Dificuldade em gerenciar o histórico de equipamentos desativados e em localizar rapidamente o contato de fornecedores específicos para cada tipo de grandeza.
 >
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -28,17 +42,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Gestor  | Cadastrar novos padrões com TAG e Série           | Manter o inventário de instrumentos atualizado.             |
+|Técnico e gestor      | Visualizar o histórico de calibração e o PDF do certificado               | Comprovar a rastreabilidade metrológica ao cliente final. |
+|Gestor       | Cadastrar fornecedores          | Centralizar o contato com os laboratórios parceiros. |
+|Técnico e gestor      | Visualizar um dashboard de status (Válido/Vencido)          | Antecipar o envio de padrões para calibração externa. |
+|Gestor       | Desativar um padrão registrando o motivo         | Manter o histórico de descarte para auditorias futuras. |
+|Gestor       | Registrar nova calibração de um padrão         | Manter o histórico de calibrações de cada padrão. |
+|Gestor       | Ser notificado quando um padrão está próximo do vencimento ou já está vencido        | Manter atenção aos padrões que precisam de calibração. |
 
 
 ## Requisitos
@@ -49,15 +59,36 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | Aluno X |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | Aluno Y |
+|RF-001| O sistema deve permitir o cadastro de usuários com definição de perfil (Gestor ou Técnico), contendo no mínimo: nome, email e senha.  | ALTA |  |
+|RF-002| O sistema deve permitir que usuários cadastrados realizem login utilizando email e senha para acesso à plataforma.  | ALTA |  |
+|RF-003| O sistema deve permitir que o Gestor cadastre padrões, informando: nome, fabricante, modelo, TAG, número de série, patrimônio e setor.  | ALTA | |
+|RF-004| O sistema deve permitir que o Gestor edite as informações dos padrões cadastrados.  | ALTA | Lucas Oliveira |
+|RF-005| O sistema deve permitir que o Gestor registre calibrações de padrões, informando: data de realização, número do certificado, órgão calibrador (fornecedor), periodicidade, custo e o certificado em formato PDF. | ALTA | Lucas Oliveira |
+|RF-006| O sistema deve permitir que o Gestor cadastre fornecedores, informando: nome, razão social, CNPJ, responsável, telefone, e-mail, link do portal, usuário e senha.  | ALTA | Helena Edim |
+|RF-007| O sistema deve permitir que Gestores e Técnicos visualizem a lista de fornecedores, contendo: nome, responsável, telefone e e-mail. Caso o fornecedor possua portal online, deve ser disponibilizado um acesso direto ao mesmo. | MÉDIA | Helena Edim |
+|RF-008| O sistema deve permitir que o Gestor edite e exclua fornecedores cadastrados. | MÉDIA | Helena Edim |
+|RF-009| O sistema deve permitir que Gestores e Técnicos visualizem os dados da última calibração e o histórico completo de calibrações dos padrões. | ALTA | |
+|RF-010| O sistema deve disponibilizar um dashboard de padrões para Gestores e Técnicos, contendo informações dos padrões e permitindo filtragem por: setor, válido, atenção, vencido e indeterminado. | ALTA | |
+|RF-011| O sistema deve permitir que Gestores e Técnicos realizem buscas de padrões no dashboard por nome, TAG ou patrimônio. | MÉDIA | |
+|RF-012| O sistema deve permitir que o Gestor desative padrões, registrando o motivo da desativação.| MÉDIA |  |
+|RF-013| O sistema deve permitir que Gestores e Técnicos visualizem o módulo de padrões desativados, contendo o registro de baixa com justificativa técnica.| MÉDIA | |
+|RF-014| O sistema deverá notificar os usuários quando a calibração estiver a 1 mês de vencer. | MÉDIA | |
+|RF-015| O sistema deve manter um histórico de alterações (inclusão, edição e exclusão) realizadas por usuários sobre padrões, calibrações e fornecedores. | BAIXA | |
+|RF-016| O sistema deve manter um histórico de notificações de calibrações próximas ao vencimento. | MÉDIA | |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móveis | ALTA | 
+|RNF-002| O tempo de resposta do sistema não deve exceder 5s para exibir páginas em consultas em uso normal |  MÉDIA |
+|RNF-003| Visualização de certificados PDF integrada ao app (sem download externo). |  BAIXA |
+|RNF-004| O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD). |  BAIXA |
+|RNF-005| Conformidade visual com a paleta de cores institucional da Medical Hosp. |  BAIXA |
+|RNF-006| O sistema deverá possuir tema claro e tema escuro. |  BAIXA |
+|RNF-007| O sistema deslogar sozinho após 10 minutos de inatividade. |  BAIXA |
+
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -81,17 +112,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02|  O serviço de API desenvolvido em ASP.NET Core  deve seguir rigorosamente o padrão MVC (Model
+View-Controller). |
+|03| O sistema de visualização de PDF depende da conectividade para carregar arquivos da nuvem ou armazenamento local.       |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+
+![Diagrama de Casos de Uso](img/DiagramaCasosDeUso.drawio.png)
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
@@ -136,10 +166,19 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![Simple Project Timeline](img/GerenciamentoEquipes.png)
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+|Recursos Necessários    | Custo Estimado (R$)  | Descrição e Justificativa |  |
+|------|-----------------------------------------|----| ----|
+|Recursos humanos| 200.000,00  | Custos com a equipe de desenvolvimento (desenvolvedores React Native, .NET, designers UI/UX), incluindo salários, encargos sociais e benefícios durante o período de execução do projeto. |  |
+|Hardware| 25.000,00 | Investimento em computadores de alto desempenho para a equipe de desenvolvimento, servidores de teste, e dispositivos móveis para a realização de testes em ambientes Android e iOS. |  |
+|Rede| 2.400,00 | Custos relacionados à infraestrutura de rede, incluindo internet de alta velocidade para a equipe, serviços de hospedagem inicial e largura de banda para transferências de dados. |  |
+|Software| 24.000,00| Licenças de ferramentas de desenvolvimento (IDE, ferramentas de design, bibliotecas comerciais), licenças de sistemas operacionais, serviços de nuvem (Cloud Services) e ambientes de banco de dados. |  |
+|Serviços| 5.000,00 | Contratação de serviços de terceiros, como consultoria especializada em segurança da informação (LGPD), auditoria de código, treinamento para a equipe e emissão de certificados digitais. |  |
+|TOTAL| 256.400,00| Soma total do investimento necessário para a execução do projeto. | |
+
+
