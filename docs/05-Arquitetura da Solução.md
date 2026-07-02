@@ -8,26 +8,20 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+![WhatsApp Image 2026-03-26 at 18 41 54](https://github.com/user-attachments/assets/c2d861eb-8c4b-400c-90c9-72c23c5438be)
 
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+<img width="5258" height="3365" alt="esquema_relacional" src="https://github.com/user-attachments/assets/f2fcdd18-5e0f-401e-a10f-1e75afc7414a" />
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
 ## Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+<img width="1548" height="864" alt="Untitled" src="https://github.com/user-attachments/assets/c0e9ae1a-cd0a-4726-9a50-6097c59176f8" />
 
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
@@ -37,13 +31,19 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+<img width="679" height="416" alt="tecnologias" src="https://github.com/user-attachments/assets/1e16d9a0-aae9-4059-bcd1-f44b1adaa3ba" />
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+O aplicativo móvel será desenvolvido com React Native utilizando o framework Expo, que permite a criação de aplicações cross-platform em JavaScript com suporte estável nas versões recentes do Android. O Expo também facilita a distribuição do aplicativo durante o desenvolvimento e apresentação, dispensando a publicação em lojas de aplicativos por meio do Expo Go.
+
+Para o backend e persistência de dados, será utilizado o Supabase, plataforma que oferece banco de dados PostgreSQL gerenciado, API REST gerada automaticamente, autenticação de usuários e controle de acesso por meio de políticas de Row Level Security (RLS). O aplicativo se comunicará diretamente com o Supabase por meio do SDK oficial @supabase/supabase-js, sem necessidade de um servidor intermediário.
+
+A prototipação das telas será feita no Figma, permitindo validar o fluxo e a interface antes da implementação. O código será desenvolvido no Visual Studio Code e o versionamento será gerenciado com Git, com repositório hospedado no GitHub.
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A hospedagem da plataforma será realizada integralmente por meio do Supabase, um serviço de backend como serviço (BaaS) baseado em PostgreSQL. A escolha se justifica pela disponibilidade de um plano gratuito com recursos suficientes para o escopo do projeto, pela facilidade de integração com React Native e pela eliminação da necessidade de um servidor backend dedicado.
+
+O Supabase concentrará três responsabilidades principais: o armazenamento dos dados em um banco de dados PostgreSQL gerenciado, a exposição automática desses dados via API REST gerada pelo serviço, e o controle de autenticação dos usuários com suporte a login por usuário e senha.
 
 > **Links Úteis**:
 >
@@ -54,12 +54,19 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+Com base na norma ISO/IEC 25010, a equipe selecionou as subcaracterísticas mais relevantes para o contexto do projeto, considerando o perfil dos usuários, os requisitos levantados e as restrições do ambiente de uso.
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+- Adequação funcional: Foi escolhida por ser a base de qualquer avaliação, o sistema precisa realizar corretamente o que foi especificado nos requisitos, como o registro de vendas, o controle de estoque e a geração de relatórios. A métrica utilizada será a proporção de requisitos funcionais implementados e validados em relação ao total especificado.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+- Usabilidade: É relevante pois os usuários são funcionários de uma fábrica que podem ter pouca familiaridade com tecnologia. O sistema deve ser compreendido e operado sem necessidade de treinamento extenso. A métrica será o tempo médio necessário para que um novo usuário conclua tarefas básicas, como registrar uma venda, sem auxílio externo.
+
+- Confiabilidade: Sob a perspectiva de disponibilidade, é diretamente exigida pelos requisitos do projeto, o aplicativo deve permitir o registro de vendas mesmo sem conexão com a internet. A métrica será a taxa de sucesso na sincronização de registros offline após o restabelecimento da conexão.
+
+- Desempenho: Foi incluído pois o projeto estabelece como requisito não funcional que as requisições devem ser processadas em no máximo três segundos. A métrica será o tempo de resposta médio das operações principais do sistema, medido em condições normais de uso.
+
+- Segurança: É um critério obrigatório dado que o sistema lida com dados de clientes e funcionários, estando sujeito à Lei Geral de Proteção de Dados (LGPD). A subcaracterística de controle de acesso será avaliada pela correta segregação de funcionalidades entre os perfis — Administrador, Gestor, Vendedor e Estoquista —, verificando se nenhum perfil consegue acessar recursos além dos permitidos.
+
+- Portabilidade: É pertinente pela natureza mobile do projeto e pelo requisito de compatibilidade com as últimas cinco versões do sistema operacional Android. A métrica será a execução bem-sucedida das funcionalidades principais nas versões-alvo, sem falhas ou degradação de interface.
 
 > **Links Úteis**:
 >
